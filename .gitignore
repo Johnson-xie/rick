@@ -25,10 +25,8 @@ media
 *.iws /out/
 *.idea/
 DS_Store
- 
-# Python #
-*.py[cod]
-*$py.class
+*.idea/ 
+
  
 # Distribution / packaging
 .Python build/
