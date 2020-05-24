@@ -32,5 +32,5 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
-handler404 = 'www.views.page_not_found'
-handler500 = 'www.views.server_error'
+handler404 = 'say_hello.views.page_not_found'
+handler500 = 'say_hello.views.server_error'

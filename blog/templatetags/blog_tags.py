@@ -3,7 +3,7 @@
 from blog.models import Post, Tag, Links, Advertising
 from django import template
 from django.db.models.aggregates import Count
-from www.settings import SITE_CONFIGS
+from say_hello.settings import SITE_CONFIGS
 
 register = template.Library()
 
