@@ -7,6 +7,7 @@ from say_hello.settings import SITE_CONFIGS
 
 register = template.Library()
 
+
 # 获取最新5个评论
 @register.simple_tag
 def get_recent_comments(num=5):
@@ -18,6 +19,7 @@ def get_recent_comments(num=5):
 @register.simple_tag
 def get_recent_posts(num=5):
     return Post.objects.filter(is_show=True).order_by('-created_time')[:num]
+
 
 # 获取文章归档
 @register.simple_tag
@@ -35,8 +37,9 @@ def get_tags():
         "font-size:24px;color:#555",
         "font-size:21.5px;color:#666"
     ]
-    tags = Tag.objects.filter(post__is_show=True).annotate(num_posts=Count('post')).filter(num_posts__gt=0).order_by('-num_posts')[:20]
-    return {'tags_style':tags_style, 'tags':tags}
+    tags = Tag.objects.filter(post__is_show=True).annotate(num_posts=Count('post')).filter(num_posts__gt=0).order_by(
+        '-num_posts')[:20]
+    return {'tags_style': tags_style, 'tags': tags}
 
 
 # 获取友情链接

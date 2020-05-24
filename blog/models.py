@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from mdeditor.fields import MDTextField
 
+
 # Create your models here.
 class Tag(models.Model):
     '''
@@ -14,10 +15,10 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
     class Meta:
         verbose_name = u'标签'
         verbose_name_plural = u'标签'
-
 
 
 class Post(models.Model):
@@ -69,7 +70,6 @@ class Post(models.Model):
         self.views += 1
         self.save(update_fields=['views'])
 
-
     class Meta:
         # 获取 Post 列表时，按照顶置文章、排序级别、创建时间排序
         ordering = ['-is_top', '-sort_level', '-created_time']
@@ -85,6 +85,7 @@ class Links(models.Model):
 
     def __str__(self):
         return self.name
+
     class Meta:
         verbose_name = u'友情链接'
         verbose_name_plural = u'友情链接'
@@ -99,6 +100,7 @@ class Advertising(models.Model):
 
     def __str__(self):
         return self.ad_name
+
     class Meta:
         verbose_name = u'广告链接'
         verbose_name_plural = u'广告链接'
