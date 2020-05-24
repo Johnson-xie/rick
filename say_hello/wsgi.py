@@ -17,10 +17,11 @@ https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
 
 import os
 from os.path import dirname, abspath
+import sys
+
 
 PROJECT_DIR = dirname(dirname(abspath(__file__)))
 
-import sys
 
 sys.path.insert(0, PROJECT_DIR)
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "say_hello.settings")
