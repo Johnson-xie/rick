@@ -15,11 +15,9 @@ from django.core.wsgi import get_wsgi_application
 
 PROJECT_DIR = dirname(dirname(abspath(__file__)))
 
-sub = os.path.join(PROJECT_DIR, "say_hello")
 
-
-sys.path.append(PROJECT_DIR)
-sys.path.append(sub)
+sys.path.append("/mysite/say_hello/say_hello")
+sys.path.append("/mysite/say_hello")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "say_hello.settings")
 
 
