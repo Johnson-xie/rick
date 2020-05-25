@@ -24,7 +24,7 @@ SECRET_KEY = ')*_p4mry6(klc(%afiyna$w8ykyz^un8o*)0v-!6wvd_()7(+3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','ripkobe.com.cn','120.24.255.31','0.0.0.0:8000','127.0.0.1']
+ALLOWED_HOSTS = ['localhost', 'ripkobe.com.cn', '120.24.255.31', '0.0.0.0:8000', '127.0.0.1']
 # ALLOWED_HOSTS = ['*']
 
 # Application definition
@@ -85,12 +85,12 @@ WSGI_APPLICATION = 'say_hello.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
-        'NAME': 'blog',         # 你要存储数据的库名，事先要创建之
-        'USER': 'root',         # 数据库用户名
-        'PASSWORD': 'qwer1234', # 密码
-        'HOST': 'localhost',    # 主机
-        'PORT': '3306',         # 数据库使用的端口
+        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+        'NAME': 'blog',  # 你要存储数据的库名，事先要创建之
+        'USER': 'root',  # 数据库用户名
+        'PASSWORD': 'qwer1234',  # 密码
+        'HOST': 'localhost',  # 主机
+        'PORT': '3306',  # 数据库使用的端口
     }
 }
 
@@ -126,7 +126,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "/static/") # 部署时用
+STATIC_ROOT = os.path.join(BASE_DIR, "/static/")  # 部署时用
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "static"),
