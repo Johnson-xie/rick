@@ -12,12 +12,8 @@ urlpatterns = [
     path('about/', BlogViews.About, name='About'),
     path('project/', BlogViews.Project, name='Project'),
 
-
     path('tags/<tag>/', BlogViews.Index().tags, name='tags'),
-    path('post/<int:pk>/',BlogViews.Detail.as_view(), name='post'),
-    path('content.json/',BlogViews.search, name='search'),
-
-
-
+    path('post/<int:pk>/', BlogViews.Detail.as_view(), name='post'),
+    path('content.json/', BlogViews.search, name='search'),
 
 ]

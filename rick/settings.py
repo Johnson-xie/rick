@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # 'blog.apps.BlogConfig',  # 注册blog应用
+    'blog.apps.BlogConfig',  # 注册blog应用
     'mdeditor',  # 注册富文本编辑器
 ]
 
