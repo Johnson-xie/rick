@@ -8,7 +8,7 @@ from django.db.models import Q
 from django.db.models.aggregates import Count
 import json, re
 from django.http import HttpResponse
-from say_hello.views import page_not_found
+from rick.views import page_not_found
 import markdown
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension

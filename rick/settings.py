@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'say_hello.urls'
+ROOT_URLCONF = 'rick.urls'
 
 TEMPLATES = [
     {
@@ -70,29 +70,29 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'say_hello.wsgi.application'
+WSGI_APPLICATION = 'rick.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 #
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-        'NAME': 'blog',  # 你要存储数据的库名，事先要创建之
-        'USER': 'root',  # 数据库用户名
-        'PASSWORD': 'qwer1234',  # 密码
-        'HOST': 'localhost',  # 主机
-        'PORT': '3306',  # 数据库使用的端口
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+#         'NAME': 'blog',  # 你要存储数据的库名，事先要创建之
+#         'USER': 'root',  # 数据库用户名
+#         'PASSWORD': 'qwer1234',  # 密码
+#         'HOST': 'localhost',  # 主机
+#         'PORT': '3306',  # 数据库使用的端口
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -130,7 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "/static/")  # 部署时用
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "static"),
-#     '/var/say_hello/static/',
+#     '/var/rick/static/',
 # ]
 
 MEDIA_URL = '/media/'
