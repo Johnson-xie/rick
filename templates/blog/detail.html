@@ -70,13 +70,14 @@
             <script type="text/javascript">
                 var gitalk = new Gitalk({
                     // gitalk的主要参数
+                    enable: true,
                     clientID: '{{ SITE_CONFIGS.Gitalk.clientID }}',
                     clientSecret: '{{ SITE_CONFIGS.Gitalk.clientSecret }}',
                     repo: '{{ SITE_CONFIGS.Gitalk.repo }}',
                     owner: '{{ SITE_CONFIGS.Gitalk.owner }}',
                     admin: ['{{ SITE_CONFIGS.Gitalk.admin }}'],
                     id: "{{ post.get_absolute_url }}",
-                    distractionFreeMode: false
+                    distractionFreeMode: true
                 });gitalk.render('gitalk-container');
             </script>
             <!-- Gitalk end -->
