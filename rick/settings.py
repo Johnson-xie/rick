@@ -130,7 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "/static/")  # 部署时用
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/var/rick/static/',
+#    '/var/rick/static/',
 ]
 
 STATIC_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
@@ -199,7 +199,7 @@ SITE_CONFIGS = {
         'Music': 'https://music.163.com/#/user/home?id=438569564',  # 音乐地址
         'Leetcode': 'https://leetcode.com/johnson_xie/',  # Twitter
         'GitHub': 'https://github.com/Johnson-xie/',  # GitHub
-        'Beian': 'e4202c07-cd95-464f-a727-db92627baf31',  # 备案号
+        'Beian': '蜀ICP备20016161号',  # 备案号
     },
 
     # 侧边栏音乐插件配置
