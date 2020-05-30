@@ -130,7 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "/static/")  # 部署时用
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/var/rick/static/',
+#    '/var/rick/static/',
 ]
 
 STATIC_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
