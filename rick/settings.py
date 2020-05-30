@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')*_p4mry6(klc(%afiyna$w8ykyz^un8o*)0v-!6wvd_()7(+3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'ripkobe.com.cn', '120.24.255.31', '0.0.0.0:8000', '127.0.0.1']
 # ALLOWED_HOSTS = ['*']
@@ -199,7 +199,7 @@ SITE_CONFIGS = {
         'Music': 'https://music.163.com/#/user/home?id=438569564',  # 音乐地址
         'Leetcode': 'https://leetcode.com/johnson_xie/',  # Twitter
         'GitHub': 'https://github.com/Johnson-xie/',  # GitHub
-        'Beian': 'e4202c07-cd95-464f-a727-db92627baf31',  # 备案号
+        'Beian': '蜀ICP备20016161号',  # 备案号
     },
 
     # 侧边栏音乐插件配置
