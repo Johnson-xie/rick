@@ -215,11 +215,11 @@ SITE_CONFIGS = {
 
     # 第三方评论Gitalk插件配置，关于下面的参数获取自己百度：(参考链接:https://www.jianshu.com/p/78c64d07124d)
     'Gitalk': {
-        'clientID': '你的clientID',  # Github Application clientID
-        'clientSecret': '你的clientSecret',  # Github Application clientSecret
-        'repo': '仓库名',  # 存储你评论 issue 的 Github 仓库名
-        'owner': 'Github 用户名',  # Github 用户名
-        'admin': 'Github 用户名',  # Github 用户名
+        'clientID': '474a6c27510f3f238dbf',  # Github Application clientID
+        'clientSecret': 'baef8adfe0b3f69511aa1e9a68d3ff751e899995',  # Github Application clientSecret
+        'repo': 'rick',  # 存储你评论 issue 的 Github 仓库名
+        'owner': 'Johnson-xie',  # Github 用户名
+        'admin': 'Johnson-xie',  # Github 用户名
     },
 
     # 百度统计,代码获取方法自行百度,不需要的话可以留空
