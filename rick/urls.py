@@ -10,7 +10,6 @@ urlpatterns = [
 
     path('blog/', include('blog.urls')),
     path('mdeditor/', include('mdeditor.urls')),
-    path(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 ]
 
 if settings.DEBUG:

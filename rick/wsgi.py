@@ -15,8 +15,6 @@ from django.core.wsgi import get_wsgi_application
 PROJECT_DIR = dirname(dirname(os.path.abspath(__file__)))
 
 sys.path.insert(0, PROJECT_DIR)
-print(PROJECT_DIR)
-print(sys)
 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rick.settings')
