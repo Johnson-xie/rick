@@ -142,7 +142,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # mdeditor markdown编辑器配置
 MDEDITOR_CONFIGS = {
     'default': {
-        'width': '90%',  # 自定义编辑框宽度
+        'width': '100%',  # 自定义编辑框宽度
         'heigth': 500,  # 自定义编辑框高度
         'toolbar': ["undo", "redo", "|",
                     "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
@@ -166,7 +166,7 @@ MDEDITOR_CONFIGS = {
     },
 
     'form_config': {
-        'width': '70%',  # 自定义编辑框宽度
+        'width': '100%',  # 自定义编辑框宽度
         'heigth': 500,  # 自定义编辑框高度
         'toolbar': ["undo", "redo", "|", "link", "reference-link", "image", "code", "preformatted-text", "code-block",
                     "table",
@@ -189,8 +189,8 @@ MDEDITOR_CONFIGS = {
 
 # 站点配置
 SITE_CONFIGS = {
-    'Name': 'Rick',  # 站点名称
-    'Title': 'hello world',  # 站点标题
+    'Name': '梦开始的地方',  # 站点名称
+    'Title': '热爱生活',  # 站点标题
 
     # 站点底部footer配置
     'Footer': {
