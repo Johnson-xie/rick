@@ -142,10 +142,19 @@
 <script>document.addEventListener("DOMContentLoaded", function () {
     FastClick.attach(document.body)
 }, !1)</script>
-<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
-       src="media/mp3/ruyan.mp3">
+<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="hidden"
+       src="media/mp3/ruyan.mp3">  // 如烟
+{#       src="media/mp3/ry.mov">  // 如烟副歌#}
+{#       src="http://mp3.9ku.com/mp3/553/552463.mp3">   // 有些事现在不做，就永远不会做了#}
+{#       src="http://mp3.9ku.com/hot/2005/02-25/64467.mp3">  // 多一天爱一点#}
     你的浏览器版本太低，不支持audio标签
 </audio>
+
+{#<audio controls="controls" autoplay="autoplay" hidden="hidden">#}
+{#        <source src="http://mp3.9ku.com/mp3/553/552463.mp3" type="audio/mp3">#}
+{#        <source src="http://mp3.9ku.com/hot/2005/02-25/64467.mp3" type="audio/mp3">#}
+{#        <embed height="50px" width="100px">#}
+{#</audio>#}
 </body>
 
 </html>
